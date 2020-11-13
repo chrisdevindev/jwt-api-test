@@ -20,7 +20,7 @@ class AuthController {
             return res.sendStatus(401)
         }
 
-        const token = jwt.sign({ id: user.id }, 'secret', { expiresIn: '10h' })
+        const token = jwt.sign({ id: user.id }, process.env.SECRET_KEY, { expiresIn: '10h' })
 
         delete user.password
 
