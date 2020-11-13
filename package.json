@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "npx nodemon --exec ts-node src/index.ts",
+    "dev": "npx nodemon --exec ts-node --files src/index.ts",
     "typeorm": "npx ts-node ./node_modules/typeorm/cli.js"
   },
   "devDependencies": {
